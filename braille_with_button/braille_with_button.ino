@@ -62,18 +62,24 @@ void displayEquation(String equationString) {
 
     if (i == 0) {
       displaySpecialSymbol(1); // Display number indicator
+      delay(3000);
     } else if (i == equationLength - 2) {
       displayequal(0); // Display equal sign
+      delay(3000);
     } else if (i == 2) {
       displayDigits(tens, ones); // Display first number
+      delay(3000);
     } else if (i == 4) {
       displayoperations(tens); // Display operation
+      delay(3000);
     } else {
       displayDigits(tens, ones); // Display second number
+      delay(3000);
     }
 
     resetLEDs(); // Reset LEDs
   }
+  waitForButton();
 }
 
 void waitForButton() {
@@ -138,7 +144,6 @@ void loop() {
 
       displayEquation(equationString); // Display the equation
       printEquation(equationString); // Print the equation
-      waitForButton();
     }
 
     Serial.println("Waiting for the next input..."); // Print the "Waiting for the next input..." message
