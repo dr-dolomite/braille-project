@@ -38,7 +38,7 @@ This Arduino code is designed to display simple arithmetic equations in Braille 
 1. Connect the LEDs to the appropriate pins specified in the `ledPins` array.
 2. Connect a button to the `buttonPin` and ground.
 3. Upload the code to the Arduino board.
-4. Open the serial monitor and enter an equation in the format `<number><operation><number>`, e.g., `1510`, `2904`, `3705`. Multiple equations can be entered, separated by spaces.
+4. Open the serial monitor and enter an equation in the format `<number><operation><number>`, e.g., `0015101000`, `0029200400`, `0037300500`. Multiple equations can be entered, separated by spaces.
 5. The program will display the Braille patterns for the first part of the equation on the LEDs.
 6. Press the button to display the next part of the equation.
 7. Repeat step 6 until the entire equation has been displayed.
